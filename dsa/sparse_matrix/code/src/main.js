@@ -127,24 +127,20 @@ function main() {
 
   const resultAdd = matrix1.add(matrix2);
   const resultSub = matrix1.subtract(matrix2);
-  // const resultMult = matrix1.multiply(matrix1);
+
 
   const outputAddPath = 'dsa/sparse_matrix/sample_results/addition_result.txt';
   const outputSubPath =
     'dsa/sparse_matrix/sample_results/substration_result.txt';
-  // const outputMultPath =
-  //   'dsa/sparse_matrix/sample_results/multiplication_result.txt';
 
   resultAdd.saveResult(outputAddPath);
   resultSub.saveResult(outputSubPath);
-  // resultMult.saveResult(outputMultPath);
+  
 
   console.log(
     `Processed successfully. Output saved for addition and substration between ${firstmatrixFilePath} and ${secondmatrixFilePath} : ${outputAddPath} ${outputSubPath} respectively`
   );
-  // console.log(
-  //   `Processed successfully. Output saved for multiplication between ${firstmatrixFilePath} and ${thirdmatrixFilePath} : ${outputMultPath}`
-  // );
+ 
 }
 
 main();
